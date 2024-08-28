@@ -64,6 +64,19 @@ namespace RunGame
         [SerializeField]
         private AudioClip soundOnJump = null;
 
+        // スプリントの最大時間
+        [SerializeField]
+        private float sprintDuration = 5f;
+        // スプリントのクールダウン時間
+        [SerializeField]
+        private float sprintCooldown = 3f;
+        // スプリントのタイマー
+        private float sprintTimer = 0f;
+        // スプリントのクールダウンタイマー
+        private float sprintCooldownTimer = 0f;
+        // スプリント中かどうか
+        private bool isSprinting = false;
+
         // このキャラクターのスリープ状態を取得します。
         public bool IsSleeping { get; private set; } = false;
 
@@ -110,6 +123,16 @@ namespace RunGame
                 return;
             }
 
+            // スプリントのクールダウンタイマー更新
+            if (sprintCooldownTimer > 0)
+            {
+                sprintCooldownTimer -= Time.deltaTime;
+                if (sprintCooldownTimer <= 0)
+                {
+                    sprintCooldownTimer = 0;
+                }
+            }
+
             switch (currentState)
             {
                 case PlayerState.Walking:
@@ -135,6 +158,14 @@ namespace RunGame
                     Move();
                     break;
                 case PlayerState.Sprinting:
+                    // スプリントタイマー更新
+                    sprintTimer -= Time.deltaTime;
+                    if (sprintTimer <= 0)
+                    {
+                        // スプリント終了
+                        Walk();
+                        return;
+                    }
                     // 落下判定
                     if (!isGrounded)
                     {
@@ -284,6 +315,9 @@ namespace RunGame
         // このキャラクターをスプリント状態に設定します。
         public void Sprint()
         {
+            isSprinting = true;
+            sprintTimer = sprintDuration;
+            sprintCooldownTimer = sprintCooldown; // クールダウンタイマーをリセット
             currentState = PlayerState.Sprinting;
             animator.SetBool(isSprintId, true);
             effectAudio.Play();
