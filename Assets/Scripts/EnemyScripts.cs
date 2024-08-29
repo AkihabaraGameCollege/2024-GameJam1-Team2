@@ -15,7 +15,7 @@ public class EnemyScripts : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(0.08f, 0, 0);//1フレームごとに等速で直進
+        transform.Translate(0.04f, 0, 0);//1フレームごとに等速で直進
 
         //指定の位置に来たら壊す
         if (transform.position.x > 60f)
