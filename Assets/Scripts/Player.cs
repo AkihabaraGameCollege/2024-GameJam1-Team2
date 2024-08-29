@@ -67,7 +67,7 @@ namespace RunGame
 
         // スプリントの最大時間
         [SerializeField]
-        private float sprintDurationBase = 5f;
+        private float sprintDurationBase = 100f;
         // スプリントのクールダウン時間
         [SerializeField]
         private float sprintCooldown = 3f;
@@ -79,6 +79,7 @@ namespace RunGame
         // スプリント中かどうか
         private bool isSprinting = false;
         // スコアアイテムを集めた数
+        [SerializeField]
         private int scoreItemsCollected = 0;
         // スプリントタイマー用スライダー
         [SerializeField]
@@ -367,11 +368,30 @@ namespace RunGame
                 Destroy(other.gameObject);
 
                 // スプリントの効果を更新
+                UpdateSprintEffects();
+            }
+        }
+
+        // スプリントの効果を更新するメソッド
+        private void UpdateSprintEffects()
+        {
+            if (sprintSlider != null)
+            {
+                // アイテムによるスプリントの最大時間を計算
+                float newMaxSprintDuration = sprintDurationBase + (scoreItemsCollected * 0.5f);
+
+                // スライダーの最大値を更新
+                sprintSlider.maxValue = newMaxSprintDuration;
+
+                // スプリント中ならスプリントタイマーを最大値に設定
                 if (isSprinting)
                 {
-                    sprintTimer = sprintDurationBase + (scoreItemsCollected * 0.5f);
+                    sprintTimer = newMaxSprintDuration;
                 }
+
+                // スライダーの現在値を更新
+                sprintSlider.value = sprintTimer;
             }
         }
     }
-}
+  }
