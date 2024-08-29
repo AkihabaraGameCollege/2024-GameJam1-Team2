@@ -72,6 +72,7 @@ namespace RunGame
         [SerializeField]
         private float sprintCooldown = 3f;
         // スプリントのタイマー
+        [SerializeField]
         private float sprintTimer = 0f;
         // スプリントのクールダウンタイマー
         private float sprintCooldownTimer = 0f;
@@ -180,6 +181,8 @@ namespace RunGame
                     Move();
                     break;
                 case PlayerState.Sprinting:
+
+                    Debug.Log("sprint");
                     // スプリントタイマー更新
                     sprintTimer -= Time.deltaTime;
                     if (sprintTimer <= 0)
