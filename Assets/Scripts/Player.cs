@@ -147,16 +147,10 @@ namespace RunGame
                 }
             }
 
-            // スプリント中のスライダー更新
-            if (currentState == PlayerState.Sprinting)
-            {
-                sprintSlider.value = sprintTimer;
-            }
-            else
-            {
-                sprintSlider.value = sprintDurationBase;
-            }
+            // スプリントタイマーの値を常にスライダーに反映
+            sprintSlider.value = sprintTimer;
 
+            // プレイヤーの状態に応じた処理
             switch (currentState)
             {
                 case PlayerState.Walking:
@@ -182,7 +176,6 @@ namespace RunGame
                     Move();
                     break;
                 case PlayerState.Sprinting:
-
                     Debug.Log("sprint");
                     // スプリントタイマー更新
                     sprintTimer -= Time.deltaTime;
@@ -250,7 +243,6 @@ namespace RunGame
                     break;
             }
         }
-
         // 固定フレームレートで呼び出される更新処理です。
         void FixedUpdate()
         {
@@ -336,8 +328,14 @@ namespace RunGame
             effectAudio.Stop();
 
             currentState = PlayerState.Walking;
-        }
 
+            // スライダーのバリューをマックスバリューに戻す
+            if (sprintSlider != null)
+            {
+                sprintTimer = sprintSlider.maxValue;
+                sprintSlider.value = sprintTimer;
+            }
+        }
         // このキャラクターをスプリント状態に設定します。
         public void Sprint()
         {
