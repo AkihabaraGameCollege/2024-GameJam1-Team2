@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace RunGame
 {
@@ -66,7 +67,7 @@ namespace RunGame
 
         // スプリントの最大時間
         [SerializeField]
-        private float sprintDuration = 5f;
+        private float sprintDurationBase = 5f;
         // スプリントのクールダウン時間
         [SerializeField]
         private float sprintCooldown = 3f;
@@ -76,6 +77,11 @@ namespace RunGame
         private float sprintCooldownTimer = 0f;
         // スプリント中かどうか
         private bool isSprinting = false;
+        // スコアアイテムを集めた数
+        private int scoreItemsCollected = 0;
+        // スプリントタイマー用スライダー
+        [SerializeField]
+        private Slider sprintSlider = null;
 
         // このキャラクターのスリープ状態を取得します。
         public bool IsSleeping { get; private set; } = false;
@@ -113,6 +119,12 @@ namespace RunGame
 
             currentState = PlayerState.Walking;
             UpdatePhysicsParameters();
+
+            if (sprintSlider != null)
+            {
+                sprintSlider.maxValue = sprintDurationBase;
+                sprintSlider.value = sprintDurationBase;
+            }
         }
 
         // 毎フレームに一度実行される更新処理です。
@@ -131,6 +143,16 @@ namespace RunGame
                 {
                     sprintCooldownTimer = 0;
                 }
+            }
+
+            // スプリント中のスライダー更新
+            if (currentState == PlayerState.Sprinting)
+            {
+                sprintSlider.value = sprintTimer;
+            }
+            else
+            {
+                sprintSlider.value = sprintDurationBase;
             }
 
             switch (currentState)
@@ -316,7 +338,7 @@ namespace RunGame
         public void Sprint()
         {
             isSprinting = true;
-            sprintTimer = sprintDuration;
+            sprintTimer = sprintDurationBase + (scoreItemsCollected * 0.5f); // スコアアイテム1つにつき0.5秒追加            sprintCooldownTimer = sprintCooldown; // クールダウンタイマーをリセット
             sprintCooldownTimer = sprintCooldown; // クールダウンタイマーをリセット
             currentState = PlayerState.Sprinting;
             animator.SetBool(isSprintId, true);
@@ -330,6 +352,23 @@ namespace RunGame
             animator.SetTrigger(jumpId);
             effectAudio.PlayOneShot(soundOnJump);
             rigidbody.AddForce(jumpForce, ForceMode2D.Impulse);
+        }
+
+        // スコアアイテムを収集したときの処理
+        void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.CompareTag("ScoreItem"))
+            {
+                // スコアアイテムを集める
+                scoreItemsCollected++;
+                Destroy(other.gameObject);
+
+                // スプリントの効果を更新
+                if (isSprinting)
+                {
+                    sprintTimer = sprintDurationBase + (scoreItemsCollected * 0.5f);
+                }
+            }
         }
     }
 }
