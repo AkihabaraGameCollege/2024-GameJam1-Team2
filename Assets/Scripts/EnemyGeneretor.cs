@@ -7,7 +7,7 @@ public class EnemyGeneretor : MonoBehaviour
     // Start is called before the first frame update
 
     public GameObject EnemyPrefab;
-    float span = 1f;
+    float span = 2f;
     float delta = 0;
     // Update is called once per frame
     void Update()
