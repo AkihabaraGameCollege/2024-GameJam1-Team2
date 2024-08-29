@@ -371,7 +371,6 @@ namespace RunGame
                 UpdateSprintEffects();
             }
         }
-
         // スプリントの効果を更新するメソッド
         private void UpdateSprintEffects()
         {
@@ -383,14 +382,12 @@ namespace RunGame
                 // スライダーの最大値を更新
                 sprintSlider.maxValue = newMaxSprintDuration;
 
-                // スプリント中ならスプリントタイマーを最大値に設定
-                if (isSprinting)
-                {
-                    sprintTimer = newMaxSprintDuration;
-                }
+                // スプリントタイマーを最大値に設定
+                sprintTimer = newMaxSprintDuration;
 
-                // スライダーの現在値を更新
+                // スライダーの現在値も最大値に設定
                 sprintSlider.value = sprintTimer;
+
             }
         }
     }
