@@ -535,6 +535,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3579479638593205031, guid: af0a4f89ee1d2f14cac8f8ef17dd1886, type: 3}
+      propertyPath: m_Value
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579479638593205031, guid: af0a4f89ee1d2f14cac8f8ef17dd1886, type: 3}
+      propertyPath: m_MaxValue
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 5243089610442484167, guid: af0a4f89ee1d2f14cac8f8ef17dd1886, type: 3}
       propertyPath: m_Name
       value: sprintSlider
@@ -13289,6 +13297,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2005251894}
     m_Modifications:
+    - target: {fileID: 1559444341701292688, guid: f82b62f7c79a47946912f7fb154bb7e7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8172b0584f7fd314187b59cd53a82cf6, type: 3}
     - target: {fileID: 2369303070446667964, guid: f82b62f7c79a47946912f7fb154bb7e7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
