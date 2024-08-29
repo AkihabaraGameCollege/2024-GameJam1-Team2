@@ -117,14 +117,14 @@ namespace RunGame
                             Resume();
                         }
                     }
-                    // プレイ時間を計測する
-                    PlayTime -= Time.deltaTime;
-                    // タイムアウト判定
-                    if (PlayTime < 0)
-                    {
-                        PlayTime = 0;
-                        GameOver();
-                    }
+                    //// プレイ時間を計測する
+                    //PlayTime -= Time.deltaTime;
+                    //// タイムアウト判定
+                    //if (PlayTime < 0)
+                    //{
+                    //    PlayTime = 0;
+                    //    GameOver();
+                    //}
                     break;
                 case SceneState.GameOver:
                     break;

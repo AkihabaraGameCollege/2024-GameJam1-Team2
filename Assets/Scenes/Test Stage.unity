@@ -150,6 +150,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayTimeUI
       objectReference: {fileID: 0}
+    - target: {fileID: 7045115956021946794, guid: e0691bb840ee3b04387cdcf579411a98, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7961553043141774444, guid: e0691bb840ee3b04387cdcf579411a98, type: 3}
       propertyPath: m_Pivot.x
       value: 1

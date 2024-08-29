@@ -935,6 +935,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayTimeUI
       objectReference: {fileID: 0}
+    - target: {fileID: 7045115956021946794, guid: e0691bb840ee3b04387cdcf579411a98, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7961553043141774444, guid: e0691bb840ee3b04387cdcf579411a98, type: 3}
       propertyPath: m_Pivot.x
       value: 1
@@ -1511,7 +1515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190212087146278093, guid: 586e9281e3aa2ed469835569fb387bb5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.777779
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2190212087146278093, guid: 586e9281e3aa2ed469835569fb387bb5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1519,7 +1523,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4611165499614589655, guid: 586e9281e3aa2ed469835569fb387bb5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.777779
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4611165499614589655, guid: 586e9281e3aa2ed469835569fb387bb5, type: 3}
       propertyPath: m_LocalPosition.y
