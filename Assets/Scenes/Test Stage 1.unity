@@ -462,11 +462,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 171998583212833506, guid: af0a4f89ee1d2f14cac8f8ef17dd1886, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 171998583212833506, guid: af0a4f89ee1d2f14cac8f8ef17dd1886, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1342985821227480814, guid: af0a4f89ee1d2f14cac8f8ef17dd1886, type: 3}
       propertyPath: m_AnchorMax.x
@@ -8109,6 +8109,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 5381649897791382906, guid: f4b46cd42fb659b44a0aa1d4da75e625, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 5577537784771717327, guid: f4b46cd42fb659b44a0aa1d4da75e625, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.85
@@ -8116,6 +8120,18 @@ PrefabInstance:
     - target: {fileID: 5577537784771717327, guid: f4b46cd42fb659b44a0aa1d4da75e625, type: 3}
       propertyPath: m_LocalPosition.y
       value: 7.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6349113131462082960, guid: f4b46cd42fb659b44a0aa1d4da75e625, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6349113131462082960, guid: f4b46cd42fb659b44a0aa1d4da75e625, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6349113131462082960, guid: f4b46cd42fb659b44a0aa1d4da75e625, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.08
       objectReference: {fileID: 0}
     - target: {fileID: 6665358285784595370, guid: f4b46cd42fb659b44a0aa1d4da75e625, type: 3}
       propertyPath: m_ChunkCullingBounds.x
@@ -14038,7 +14054,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2005251891
 MonoBehaviour:
   m_ObjectHideFlags: 0
