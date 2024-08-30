@@ -18,7 +18,7 @@ namespace RunGame
         // ジャンプ力を指定します。
         [SerializeField]
         [Tooltip("ジャンプ力を指定します。")]
-        private Vector2 jumpForce = new(0, 6);
+        private Vector2 jumpForce = new(0, 40);
         // ジャンプに必要な速度を指定します。
         [SerializeField]
         [Tooltip("ジャンプに必要な速度を指定します。")]
