@@ -9,13 +9,13 @@ public class EnemyScripts : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.player_ = GameObject.Find("Player");
+        this.player_ = GameObject.Find("Player 1");
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(0.04f, 0, 0);//1フレームごとに等速で直進
+        transform.Translate(0.03f, 0, 0);//1フレームごとに等速で直進
 
         //指定の位置に来たら壊す
         if (transform.position.x > 60f)

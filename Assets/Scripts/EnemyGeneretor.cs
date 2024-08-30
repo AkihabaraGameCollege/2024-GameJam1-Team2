@@ -18,7 +18,7 @@ public class EnemyGeneretor : MonoBehaviour
             this.delta = 0;
             GameObject go = Instantiate(EnemyPrefab);
             int py = Random.Range(0, 10);//y座標に位置を指定
-            go.transform.position = new Vector3(-100, py, 0);//Enemyを生成する場所を指定
+            go.transform.position = new Vector3(-55, py, 0);//Enemyを生成する場所を指定
         
         }
     }
