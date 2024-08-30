@@ -592,6 +592,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 529827907}
     m_Modifications:
+    - target: {fileID: 71830230276547165, guid: 7c5992d879e24c840b95cd5acb7c3942, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1419ef4fd899b5a40be0f28551180c6e, type: 3}
     - target: {fileID: 174615157739597471, guid: 7c5992d879e24c840b95cd5acb7c3942, type: 3}
       propertyPath: offset.y
       value: -1.2
