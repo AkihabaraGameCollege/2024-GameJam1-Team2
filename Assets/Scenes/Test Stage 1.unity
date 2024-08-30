@@ -14398,6 +14398,10 @@ PrefabInstance:
       propertyPath: m_text
       value: "\u304A\u3057\u307E\u3044"
       objectReference: {fileID: 0}
+    - target: {fileID: 4486063523765996693, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1b7c24b9f6b172d448b9ad7c76e8c49c, type: 3}
     - target: {fileID: 5609082299266875360, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
       propertyPath: m_Name
       value: GameOverUI
