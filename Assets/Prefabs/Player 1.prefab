@@ -286,7 +286,7 @@ MonoBehaviour:
   wallChecker: {fileID: 6409998470193991122}
   effectAudio: {fileID: 71830230276547165}
   soundOnJump: {fileID: 8300000, guid: e7ed9af84e41c874fa4394737751299d, type: 3}
-  sprintDurationBase: 100
+  sprintDurationBase: 5
   sprintCooldown: 3
   sprintTimer: 0
   scoreItemsCollected: 0
