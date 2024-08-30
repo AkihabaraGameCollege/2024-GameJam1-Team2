@@ -13476,6 +13476,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3284196275369940405, guid: cdfc90e31792a7d4a8e61033efac9d27, type: 3}
+      propertyPath: m_text
+      value: "\u3064\u3065\u3051\u308B\uFF01"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3284196275369940405, guid: cdfc90e31792a7d4a8e61033efac9d27, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 4f63db7bc8d2c024d8eb3af3ba220267, type: 2}
@@ -13604,6 +13608,10 @@ PrefabInstance:
       value: 0.18277672
       objectReference: {fileID: 0}
     - target: {fileID: 5798191659915131265, guid: cdfc90e31792a7d4a8e61033efac9d27, type: 3}
+      propertyPath: m_text
+      value: "\u3042\u304D\u3089\u3081\u308B\uFF01"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5798191659915131265, guid: cdfc90e31792a7d4a8e61033efac9d27, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 4f63db7bc8d2c024d8eb3af3ba220267, type: 2}
@@ -13642,6 +13650,10 @@ PrefabInstance:
     - target: {fileID: 7036019489888093840, guid: cdfc90e31792a7d4a8e61033efac9d27, type: 3}
       propertyPath: m_Name
       value: PauseUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 7195826108283409030, guid: cdfc90e31792a7d4a8e61033efac9d27, type: 3}
+      propertyPath: m_text
+      value: "\u3084\u308A\u306A\u304A\u3059\uFF01"
       objectReference: {fileID: 0}
     - target: {fileID: 7195826108283409030, guid: cdfc90e31792a7d4a8e61033efac9d27, type: 3}
       propertyPath: m_fontAsset
