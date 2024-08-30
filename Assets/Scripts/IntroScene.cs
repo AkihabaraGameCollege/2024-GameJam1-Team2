@@ -16,7 +16,7 @@ public class IntroScene : MonoBehaviour
     {
      if(Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("Test Stage");
+            SceneManager.LoadScene("Test Stage 1");
         }   
     }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 839fe99bf75b4a74d84eafdb486485be
+guid: 3058c1ca788e23b44be1db0a7babd08d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ui_sprites_0
+      name: team2_ui_sprites_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01881b0dfa4330147b9978fb4c93aee0
-      internalID: 1574117296
+      spriteID: b97a5e1c465feb245b0f096c63cfce7e
+      internalID: 948398708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_sprites_1
+      name: team2_ui_sprites_1
       rect:
         serializedVersion: 2
         x: 64
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c29edfc995d61249aefa9433de50b72
-      internalID: 1815944009
+      spriteID: 862c088859e56b04aae341f4d5ee05b2
+      internalID: -2052228054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_sprites_2
+      name: team2_ui_sprites_2
       rect:
         serializedVersion: 2
         x: 128
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7ea2ad17edcdd744bd9834aa1454c80
-      internalID: -1026592790
+      spriteID: deed7c2924c28f34980cf52a43815c4c
+      internalID: 12355514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_sprites_3
+      name: team2_ui_sprites_3
       rect:
         serializedVersion: 2
         x: 192
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9db8187e02b5474459f422b177260899
-      internalID: -1762714221
+      spriteID: 6fff2206af4ddfe4fba9303f7d9807ee
+      internalID: -879850792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_sprites_4
+      name: team2_ui_sprites_4
       rect:
         serializedVersion: 2
         x: 256
@@ -221,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d0d173f44951a443b098346ecfefb0c
-      internalID: -454108711
+      spriteID: 129e7eb8c3e39f74a8be472dee7917b5
+      internalID: 853570437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_sprites_5
+      name: team2_ui_sprites_5
       rect:
         serializedVersion: 2
         x: 320
@@ -242,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6bd84644f5761c488f69c0ffbbd5e33
-      internalID: -1807130540
+      spriteID: 835d4e3d70273f3488e9d67375095703
+      internalID: 1636016456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_sprites_6
+      name: team2_ui_sprites_6
       rect:
         serializedVersion: 2
         x: 384
@@ -263,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e582aba8db9137f49ae33266c9a0f6e0
-      internalID: -733599614
+      spriteID: ad256f9cafbbee941b5e8e280c7328ff
+      internalID: 1862189413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_sprites_7
+      name: team2_ui_sprites_7
       rect:
         serializedVersion: 2
         x: 448
@@ -284,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c592f860c2b09f4ca1e38d34f6a31be
-      internalID: -1664984760
+      spriteID: 3b9f5c66317dd5a41a4188585d2364f5
+      internalID: -453255356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_sprites_8
+      name: team2_ui_sprites_8
       rect:
         serializedVersion: 2
         x: 0
@@ -305,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a28fb354d467164cadc6c554ea6326b
-      internalID: 1035509627
+      spriteID: 8c76933f39ed7d246aab3faa3a028046
+      internalID: -1995829082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_sprites_9
+      name: team2_ui_sprites_9
       rect:
         serializedVersion: 2
         x: 64
@@ -326,14 +326,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4855f541fddb7884896b857ed56ffdb4
-      internalID: -99321386
+      spriteID: f6029dfb50854594ba39ee191763b8b2
+      internalID: 1707049584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_sprites_10
+      name: team2_ui_sprites_10
       rect:
         serializedVersion: 2
         x: 0
@@ -347,14 +347,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5af9aa3efd754cc4fbb3476b2da31a96
-      internalID: -864434793
+      spriteID: a6dbc8793531f364c8ae1acd1ac6e954
+      internalID: -1827532132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_sprites_11
+      name: team2_ui_sprites_11
       rect:
         serializedVersion: 2
         x: 0
@@ -368,14 +368,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcff05c7f42bab6458c7d5f9c669c2a6
-      internalID: -1077248339
+      spriteID: ce6c45fff9d6d86439f849830dc130d2
+      internalID: 951249876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_sprites_12
+      name: team2_ui_sprites_12
       rect:
         serializedVersion: 2
         x: 0
@@ -389,14 +389,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ff83abdc96d23443a8ab33ce92b01a5
-      internalID: 740929461
+      spriteID: a6f2fc6c5d48d3b4c826592bc88f9ef9
+      internalID: 1955231383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_sprites_13
+      name: team2_ui_sprites_13
       rect:
         serializedVersion: 2
         x: 64
@@ -410,29 +410,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ecb0bd009c99ef48a67a1e1fee246cb
-      internalID: -732309971
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui_sprites_14
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 112
-        width: 64
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e7d8615840f2a84baeaf9b98fcb04bd
-      internalID: -721786717
+      spriteID: d1fc445b809b60a418fd936d6838224d
+      internalID: 1807104650
       vertices: []
       indices: 
       edges: []
@@ -448,21 +427,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ui_sprites_0: 1574117296
-      ui_sprites_1: 1815944009
-      ui_sprites_10: -864434793
-      ui_sprites_11: -1077248339
-      ui_sprites_12: 740929461
-      ui_sprites_13: -732309971
-      ui_sprites_14: -721786717
-      ui_sprites_2: -1026592790
-      ui_sprites_3: -1762714221
-      ui_sprites_4: -454108711
-      ui_sprites_5: -1807130540
-      ui_sprites_6: -733599614
-      ui_sprites_7: -1664984760
-      ui_sprites_8: 1035509627
-      ui_sprites_9: -99321386
+      team2_ui_sprites_0: 948398708
+      team2_ui_sprites_1: -2052228054
+      team2_ui_sprites_10: -1827532132
+      team2_ui_sprites_11: 951249876
+      team2_ui_sprites_12: 1955231383
+      team2_ui_sprites_13: 1807104650
+      team2_ui_sprites_2: 12355514
+      team2_ui_sprites_3: -879850792
+      team2_ui_sprites_4: 853570437
+      team2_ui_sprites_5: 1636016456
+      team2_ui_sprites_6: 1862189413
+      team2_ui_sprites_7: -453255356
+      team2_ui_sprites_8: -1995829082
+      team2_ui_sprites_9: 1707049584
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
