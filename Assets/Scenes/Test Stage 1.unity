@@ -8284,6 +8284,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 7.3
       objectReference: {fileID: 0}
+    - target: {fileID: 5988289527796747479, guid: f4b46cd42fb659b44a0aa1d4da75e625, type: 3}
+      propertyPath: m_Size.x
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6349113131462082960, guid: f4b46cd42fb659b44a0aa1d4da75e625, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
       value: 0.5
