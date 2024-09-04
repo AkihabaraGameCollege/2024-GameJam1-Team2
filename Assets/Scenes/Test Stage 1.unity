@@ -681,6 +681,10 @@ PrefabInstance:
       propertyPath: sprintSlider
       value: 
       objectReference: {fileID: 317481985}
+    - target: {fileID: 8248945494193699472, guid: 7c5992d879e24c840b95cd5acb7c3942, type: 3}
+      propertyPath: superJumpForce.y
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8275191853830568734, guid: 7c5992d879e24c840b95cd5acb7c3942, type: 3}
       propertyPath: m_Name
       value: Player 1
@@ -13999,7 +14003,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1480881434
 MonoBehaviour:
   m_ObjectHideFlags: 0

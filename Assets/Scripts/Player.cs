@@ -85,6 +85,11 @@ namespace RunGame
         [SerializeField]
         private Slider sprintSlider = null;
 
+        // スーパージャンプの力を指定します。
+        [SerializeField]
+        [Tooltip("スーパージャンプの力を指定します。")]
+        private Vector2 superJumpForce = new(0, 80); // スーパージャンプの力を設定します。
+
         // このキャラクターのスリープ状態を取得します。
         public bool IsSleeping { get; private set; } = false;
 
@@ -154,11 +159,11 @@ namespace RunGame
             switch (currentState)
             {
                 case PlayerState.Walking:
-                    // 落下判定
-                    if (!isGrounded)
+                case PlayerState.Sprinting:
+                    // スーパージャンプ
+                    if (Input.GetButton("Fire1") && Input.GetButtonDown("Jump"))
                     {
-                        currentState = PlayerState.Falling;
-                        animator.SetTrigger(jumpId);
+                        SuperJump();
                         return;
                     }
                     // ジャンプ
@@ -175,34 +180,6 @@ namespace RunGame
                     }
                     Move();
                     break;
-                case PlayerState.Sprinting:
-                    Debug.Log("sprint");
-                    // スプリントタイマー更新
-                    sprintTimer -= Time.deltaTime;
-                    if (sprintTimer <= 0)
-                    {
-                        // スプリント終了
-                        Walk();
-                        return;
-                    }
-                    // 落下判定
-                    if (!isGrounded)
-                    {
-                        animator.SetBool(isSprintId, false);
-                        effectAudio.Stop();
-
-                        currentState = PlayerState.Falling;
-                        animator.SetTrigger(jumpId);
-                        return;
-                    }
-                    // スプリント解除
-                    if (Input.GetButtonUp("Fire1"))
-                    {
-                        Walk();
-                        return;
-                    }
-                    Move();
-                    break;
                 case PlayerState.JumpStart:
                     // ジャンプの予備動作後、足が離れた場合
                     if (!isGrounded)
@@ -214,7 +191,6 @@ namespace RunGame
                     else if (rigidbody.velocity.y < requiredJumpSpeed)
                     {
                         animator.SetTrigger(landId);
-
                         currentState = PlayerState.Walking;
                         return;
                     }
@@ -224,7 +200,6 @@ namespace RunGame
                     if (isGrounded)
                     {
                         animator.SetTrigger(landId);
-
                         currentState = PlayerState.Walking;
                         return;
                     }
@@ -234,7 +209,6 @@ namespace RunGame
                     if (isGrounded)
                     {
                         animator.SetTrigger(landId);
-
                         currentState = PlayerState.Walking;
                         return;
                     }
@@ -243,6 +217,7 @@ namespace RunGame
                     break;
             }
         }
+
         // 固定フレームレートで呼び出される更新処理です。
         void FixedUpdate()
         {
@@ -336,11 +311,12 @@ namespace RunGame
                 sprintSlider.value = sprintTimer;
             }
         }
+
         // このキャラクターをスプリント状態に設定します。
         public void Sprint()
         {
             isSprinting = true;
-            sprintTimer = sprintDurationBase + (scoreItemsCollected * 0.5f); // スコアアイテム1つにつき0.5秒追加            sprintCooldownTimer = sprintCooldown; // クールダウンタイマーをリセット
+            sprintTimer = sprintDurationBase + (scoreItemsCollected * 0.5f); // スコアアイテム1つにつき0.5秒追加
             sprintCooldownTimer = sprintCooldown; // クールダウンタイマーをリセット
             currentState = PlayerState.Sprinting;
             animator.SetBool(isSprintId, true);
@@ -356,6 +332,19 @@ namespace RunGame
             rigidbody.AddForce(jumpForce, ForceMode2D.Impulse);
         }
 
+        // スーパージャンプを実行するメソッド
+        private void SuperJump()
+        {
+            // スーパージャンプの力を加える
+            rigidbody.AddForce(superJumpForce, ForceMode2D.Impulse);
+            // スーパージャンプ後はジャンプ状態に設定
+            currentState = PlayerState.Jumping;
+            // ジャンプのアニメーションを再生
+            animator.SetTrigger(jumpId);
+            // スーパージャンプのサウンドを再生
+            effectAudio.PlayOneShot(soundOnJump);
+        }
+
         // スコアアイテムを収集したときの処理
         void OnTriggerEnter2D(Collider2D other)
         {
@@ -369,6 +358,7 @@ namespace RunGame
                 UpdateSprintEffects();
             }
         }
+
         // スプリントの効果を更新するメソッド
         private void UpdateSprintEffects()
         {
@@ -385,8 +375,7 @@ namespace RunGame
 
                 // スライダーの現在値も最大値に設定
                 sprintSlider.value = sprintTimer;
-
             }
         }
     }
-  }
+}
