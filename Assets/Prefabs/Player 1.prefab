@@ -275,7 +275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalSpeed: 4
   sprintSpeed: 8
-  jumpForce: {x: 0, y: 6}
+  jumpForce: {x: 0, y: 8}
   requiredJumpSpeed: 0.1
   knockBackForce: {x: -16, y: 4}
   minStandAngle: -60
@@ -291,6 +291,7 @@ MonoBehaviour:
   sprintTimer: 0
   scoreItemsCollected: 0
   sprintSlider: {fileID: 0}
+  superJumpForce: {x: 0, y: 10}
 --- !u!95 &4636344544783176185
 Animator:
   serializedVersion: 5
