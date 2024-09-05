@@ -85,11 +85,6 @@ namespace RunGame
         [SerializeField]
         private Slider sprintSlider = null;
 
-        // スーパージャンプの力を指定します。
-        [SerializeField]
-        [Tooltip("スーパージャンプの力を指定します。")]
-        private Vector2 superJumpForce = new(0, 80); // スーパージャンプの力を設定します。
-
         // このキャラクターのスリープ状態を取得します。
         public bool IsSleeping { get; private set; } = false;
 
@@ -160,12 +155,6 @@ namespace RunGame
             {
                 case PlayerState.Walking:
                 case PlayerState.Sprinting:
-                    // スーパージャンプ
-                    if (Input.GetButton("Fire1") && Input.GetButtonDown("Jump"))
-                    {
-                        SuperJump();
-                        return;
-                    }
                     // ジャンプ
                     if (Input.GetButtonDown("Jump"))
                     {
@@ -332,18 +321,6 @@ namespace RunGame
             rigidbody.AddForce(jumpForce, ForceMode2D.Impulse);
         }
 
-        // スーパージャンプを実行するメソッド
-        private void SuperJump()
-        {
-            // スーパージャンプの力を加える
-            rigidbody.AddForce(superJumpForce, ForceMode2D.Impulse);
-            // スーパージャンプ後はジャンプ状態に設定
-            currentState = PlayerState.Jumping;
-            // ジャンプのアニメーションを再生
-            animator.SetTrigger(jumpId);
-            // スーパージャンプのサウンドを再生
-            effectAudio.PlayOneShot(soundOnJump);
-        }
 
         // スコアアイテムを収集したときの処理
         void OnTriggerEnter2D(Collider2D other)
