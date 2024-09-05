@@ -1063,6 +1063,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4711537613096345018}
   - component: {fileID: 1794651659531560517}
+  - component: {fileID: 9128880591990810232}
   m_Layer: 5
   m_Name: PauseUI
   m_TagString: Untagged
@@ -1115,3 +1116,24 @@ MonoBehaviour:
   resumeButton: {fileID: 3883183624543243704}
   retryButton: {fileID: 6044627644773321099}
   exitButton: {fileID: 776005149931048965}
+--- !u!95 &9128880591990810232
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7036019489888093840}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f7a0ad09d3aa9f644a59655d968d26b7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
