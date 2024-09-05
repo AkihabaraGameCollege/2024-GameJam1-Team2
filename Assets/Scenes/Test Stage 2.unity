@@ -327,7 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21cc46e71fc859646b4017a329f28f7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextStage: GameClear
+  nextStage: Test Stage 3
   playTime: 30
   player: {fileID: 329336687}
   stageIntroUI: {fileID: 2100180347}
@@ -611,11 +611,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2461633922313568067, guid: 7c5992d879e24c840b95cd5acb7c3942, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2461633922313568067, guid: 7c5992d879e24c840b95cd5acb7c3942, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.29
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 2461633922313568067, guid: 7c5992d879e24c840b95cd5acb7c3942, type: 3}
       propertyPath: m_LocalPosition.z
@@ -29172,7 +29172,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2444416972701104565, guid: abe68611edde43840af4f63b47fe654c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -24.8
+      value: -26.29
       objectReference: {fileID: 0}
     - target: {fileID: 2444416972701104565, guid: abe68611edde43840af4f63b47fe654c, type: 3}
       propertyPath: m_LocalPosition.y
