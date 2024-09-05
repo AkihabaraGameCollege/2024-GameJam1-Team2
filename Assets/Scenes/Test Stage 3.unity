@@ -894,11 +894,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2461633922313568067, guid: 7c5992d879e24c840b95cd5acb7c3942, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -10.54
       objectReference: {fileID: 0}
     - target: {fileID: 2461633922313568067, guid: 7c5992d879e24c840b95cd5acb7c3942, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 1.35
       objectReference: {fileID: 0}
     - target: {fileID: 2461633922313568067, guid: 7c5992d879e24c840b95cd5acb7c3942, type: 3}
       propertyPath: m_LocalPosition.z
@@ -31006,13 +31006,14 @@ PrefabInstance:
       value: 2.77
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5984372360155072317, guid: f4b46cd42fb659b44a0aa1d4da75e625, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6556957158105792297, guid: f4b46cd42fb659b44a0aa1d4da75e625, type: 3}
-      insertIndex: 4
+      insertIndex: 3
       addedObject: {fileID: 1044043224}
     - targetCorrespondingSourceObject: {fileID: 6556957158105792297, guid: f4b46cd42fb659b44a0aa1d4da75e625, type: 3}
-      insertIndex: 5
+      insertIndex: 4
       addedObject: {fileID: 1091101556}
     - targetCorrespondingSourceObject: {fileID: 6556957158105792297, guid: f4b46cd42fb659b44a0aa1d4da75e625, type: 3}
       insertIndex: -1
@@ -31847,7 +31848,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2444416972701104565, guid: abe68611edde43840af4f63b47fe654c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.5
+      value: -23.94
       objectReference: {fileID: 0}
     - target: {fileID: 2444416972701104565, guid: abe68611edde43840af4f63b47fe654c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -32782,13 +32783,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2124339435949038005, guid: e193df15fbec1c249bc21d9214ec180d, type: 3}
+      propertyPath: m_text
+      value: "\u30B9\u30BF\u30FC\u30C8"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2124339435949038005, guid: e193df15fbec1c249bc21d9214ec180d, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 4f63db7bc8d2c024d8eb3af3ba220267, type: 2}
+      objectReference: {fileID: 11400000, guid: b931a81369931d4489641435312437d5, type: 2}
     - target: {fileID: 2124339435949038005, guid: e193df15fbec1c249bc21d9214ec180d, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 1099587791084379211, guid: 4f63db7bc8d2c024d8eb3af3ba220267, type: 2}
+      objectReference: {fileID: -8842269090248297526, guid: b931a81369931d4489641435312437d5, type: 2}
     - target: {fileID: 2124339435949038005, guid: e193df15fbec1c249bc21d9214ec180d, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
