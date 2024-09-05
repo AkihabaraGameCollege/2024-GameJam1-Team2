@@ -18,7 +18,7 @@ public class EnemyScripts : MonoBehaviour
         transform.Translate(0.03f, 0, 0);//1フレームごとに等速で直進
 
         //指定の位置に来たら壊す
-        if (transform.position.x > 60f)
+        if (transform.position.x > 120f)
         {
             Destroy(gameObject);
         }
