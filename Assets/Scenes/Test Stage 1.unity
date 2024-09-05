@@ -14333,7 +14333,7 @@ PrefabInstance:
     - target: {fileID: 5472030505579734247, guid: d0507fb504edf2f47873fece72098db6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 57a34d3ce101c9946aba3637c0eb6f80, type: 3}
+      objectReference: {fileID: 21300000, guid: 46e6facbff5157c488dd3bc09d998026, type: 3}
     - target: {fileID: 5472030505579734247, guid: d0507fb504edf2f47873fece72098db6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -15015,6 +15015,10 @@ PrefabInstance:
     - target: {fileID: 1052560377646625029, guid: e193df15fbec1c249bc21d9214ec180d, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2124339435949038005, guid: e193df15fbec1c249bc21d9214ec180d, type: 3}
+      propertyPath: m_text
+      value: "\u30B9\u30BF\u30FC\u30C8"
       objectReference: {fileID: 0}
     - target: {fileID: 2124339435949038005, guid: e193df15fbec1c249bc21d9214ec180d, type: 3}
       propertyPath: m_fontAsset
