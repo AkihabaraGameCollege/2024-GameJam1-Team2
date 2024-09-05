@@ -32459,6 +32459,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2005251894}
     m_Modifications:
+    - target: {fileID: 862769928776629953, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 862769928776629953, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 862769928776629953, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1680170475291982858, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
       propertyPath: m_text
       value: "\u3082\u3046\u3044\u3063\u304B\u3044\uFF1F"
@@ -32475,9 +32487,61 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2597633900066276252, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597633900066276252, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 22098a3dbcf7d924d8db7b0a3aa327c9, type: 3}
+    - target: {fileID: 2597633900066276252, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597633900066276252, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597633900066276252, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2714025096804527117, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
       propertyPath: m_text
       value: "\u3082\u3063\u304B\u3044\uFF01"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2865933968723599042, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2865933968723599042, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2865933968723599042, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2909764816375256076, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2909764816375256076, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e0093707f1968634b9a5f56da23fa095, type: 3}
+    - target: {fileID: 2909764816375256076, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2909764816375256076, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2909764816375256076, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3049782085186151228, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
       propertyPath: m_text
@@ -32487,6 +32551,10 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 1b7c24b9f6b172d448b9ad7c76e8c49c, type: 3}
+    - target: {fileID: 5151945796045851211, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5609082299266875360, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
       propertyPath: m_Name
       value: GameOverUI
@@ -32582,6 +32650,10 @@ PrefabInstance:
     - target: {fileID: 6523458618695803675, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830202575477319169, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6430856937070160346, guid: 32fbae4e82a84bd4f82d2c9e511392cb, type: 3}
