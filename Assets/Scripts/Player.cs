@@ -167,6 +167,11 @@ namespace RunGame
                         Sprint();
                         return;
                     }
+                    // スプリント解除処理
+                    if (isSprinting && (!Input.GetButton("Fire1") || sprintTimer <= 0))
+                    {
+                        Walk();
+                    }
                     Move();
                     break;
                 case PlayerState.JumpStart:
@@ -288,8 +293,13 @@ namespace RunGame
         // このキャラクターのスプリント状態を解除します。
         public void Walk()
         {
-            animator.SetBool(isSprintId, false);
-            effectAudio.Stop();
+            if (isSprinting)
+            {
+                Debug.Log("スプリント解除");
+                animator.SetBool(isSprintId, false);
+                effectAudio.Stop();
+                isSprinting = false; // スプリント状態を解除
+            }
 
             currentState = PlayerState.Walking;
 

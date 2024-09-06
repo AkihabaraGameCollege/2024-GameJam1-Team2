@@ -291,7 +291,6 @@ MonoBehaviour:
   sprintTimer: 0
   scoreItemsCollected: 0
   sprintSlider: {fileID: 0}
-  superJumpForce: {x: 0, y: 10}
 --- !u!95 &4636344544783176185
 Animator:
   serializedVersion: 5
@@ -327,7 +326,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
