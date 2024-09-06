@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class EnemyScripts : MonoBehaviour
 {
+    [SerializeField]
+    private float speed = 3f;
+
     GameObject player_;
     // Start is called before the first frame update
     void Start()

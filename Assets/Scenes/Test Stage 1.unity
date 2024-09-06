@@ -852,6 +852,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8248945494193699472, guid: 7c5992d879e24c840b95cd5acb7c3942, type: 3}
+      propertyPath: sprintSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8248945494193699472, guid: 7c5992d879e24c840b95cd5acb7c3942, type: 3}
       propertyPath: sprintSlider
       value: 
       objectReference: {fileID: 317481985}
